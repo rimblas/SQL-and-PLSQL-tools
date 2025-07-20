@@ -13,6 +13,8 @@ PRO .. util_audit.pkb
 
 PRO create audit table
 exec util_audit.create_audit_table(p_action => 'EXECUTE');
+PRO create lookups table
+exec util_audit.create_audit_lookups_table(p_action => 'EXECUTE');
 
 
 PRO Recompile code that is now aware that the audit table exists
